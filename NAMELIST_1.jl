@@ -64,16 +64,35 @@ global TRAJ_FILE_FORMAT = "traj_0N_tst_TTTTTTTT_p00W_dom00X.nc"
 
 #List of variables in your NWP datasets.
 
-global NWP_VAR_LIST = ["lon", "lat", "height", "height_bnds", "height_2", "plev", "plev_bnds", "plev_2", "plev_2_bnds", "plev_3", "plev_3_bnds", "height_3", "time", "u", "v", "w", "temp", "pres", "rho", "pv_full", "qv", "qc", "qi", "qr", "qs", "qg", "qnc", "qnr", "qni", "qns", "qng", "tqr", "tqc", "tqs", "tqi", "tqg", "pres_sfc", "pres_msl", "cape_ml", "cin_ml", "tot_prec", "prec_con", "lhfl_s", "shfl_s", "clc", "clct", "clch", "clcl", "clcm", "t_2m", "sob_t", "sob_s", "thb_t", "thb_s"]
+global NWP_VAR_LIST = ["lon", "lat", "height", "height_bnds", "height_2", "plev", "plev_bnds", 
+                       "plev_2", "plev_2_bnds", "plev_3", "plev_3_bnds", "height_3", "time", 
+                       "u", "v", "w", "temp", "pres", "rho", "pv_full", "qv", "qc", "qi", "qr", 
+                       "qs", "qg", "qnc", "qnr", "qni", "qns", "qng", "tqr", "tqc", "tqs", 
+                       "tqi", "tqg", "pres_sfc", "pres_msl", "cape_ml", "cin_ml", "tot_prec", 
+                       "prec_con", "lhfl_s", "shfl_s", "clc", "clct", "clch", "clcl", "clcm", 
+                       "t_2m", "sob_t", "sob_s", "thb_t", "thb_s"]
 
 #List of variables in your trajectory files. 
 
-global TRAJ_VAR_LIST = ["idx", "CellId", "lon", "lat", "alt", "rtime", "w_v", "rho", "t", "p", "pv", "tmin", "tmax", "qv", "qc", "qr", "qi", "qs", "qg", "qh", "qnc", "qnr", "qni", "qns", "qng", "qnh", "qi_in", "qs_in", "qg_in", "qh_in", "qr_in", "qi_out", "qs_out", "qg_out", "qh_out", "qr_out", "r_evap", "f_evap", "evap", "subl", "r_melt", "c_melt", "cond", "depo", "qc_nuc", "qi_hom", "qihh", "wbf", "qx_dep", "satad2", "r_frez", "qx_rim", "ni_hom", "ni_hh", "nc_nuc", "n_sim", "qvturc", "qcturc", "qiturb", "qvconv", "qcconv", "qrconv", "qiconv", "qsconv", "qvturb", "qcturb"]
+global TRAJ_VAR_LIST = ["idx", "CellId", "lon", "lat", "alt", "rtime", "w_v", "rho", "t", 
+                        "p", "pv", "tmin", "tmax", "qv", "qc", "qr", "qi", "qs", "qg", "qh", 
+                        "qnc", "qnr", "qni", "qns", "qng", "qnh", "qi_in", "qs_in", "qg_in", 
+                        "qh_in", "qr_in", "qi_out", "qs_out", "qg_out", "qh_out", "qr_out", 
+                        "r_evap", "f_evap", "evap", "subl", "r_melt", "c_melt", "cond", 
+                        "depo", "qc_nuc", "qi_hom", "qihh", "wbf", "qx_dep", "satad2", 
+                        "r_frez", "qx_rim", "ni_hom", "ni_hh", "nc_nuc", "n_sim", "qvturc", 
+                        "qcturc", "qiturb", "qvconv", "qcconv", "qrconv", "qiconv", "qsconv", 
+                        "qvturb", "qcturb"]
 
 #Of the variables in TRAJ_VAR_LIST, which ones are "microphysical" variables,
 #meaning that they are accumulated along the simulation. 
 
-global MICRO_VAR_LIST = ["qi_in", "qs_in", "qg_in", "qh_in", "qr_in", "qi_out", "qs_out", "qg_out", "qh_out", "qr_out", "r_evap", "f_evap", "evap", "subl", "r_melt", "c_melt", "cond", "depo", "qc_nuc", "qi_hom", "qihh", "wbf", "qx_dep", "satad2", "r_frez", "qx_rim", "ni_hom", "ni_hh", "nc_nuc", "n_sim", "qvturc", "qcturc", "qiturb", "qvconv", "qcconv", "qrconv", "qiconv", "qsconv", "qvturb", "qcturb"]
+global MICRO_VAR_LIST = ["qi_in", "qs_in", "qg_in", "qh_in", "qr_in", "qi_out", "qs_out", 
+                         "qg_out", "qh_out", "qr_out", "r_evap", "f_evap", "evap", "subl", 
+                         "r_melt", "c_melt", "cond", "depo", "qc_nuc", "qi_hom", "qihh", 
+                         "wbf", "qx_dep", "satad2", "r_frez", "qx_rim", "ni_hom", "ni_hh", 
+                         "nc_nuc", "n_sim", "qvturc", "qcturc", "qiturb", "qvconv", 
+                         "qcconv", "qrconv", "qiconv", "qsconv", "qvturb", "qcturb"]
 #-------------------------------------------------
 #       Define start and end time and time steps
 #-------------------------------------------------
