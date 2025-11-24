@@ -1,0 +1,1 @@
+global CASE = 2
