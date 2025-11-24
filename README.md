@@ -93,19 +93,19 @@ From the NAMELIST, it receives:
 These limits are defined by you and indicate where the cyclone is located at two key times.
 You chose these lon and lat values such that the WCB cloud band is located within the following box: 
 
-#  (lo1,la2)-------------------------------(lo2,la2)
-#  |               ooooooooo               |       
-#  |                    oooooooooooo       |            
-#  |                       ooooooooooooo   |                 
-#  |                         ooooooooooooo |             
-#  |                   ooooooooooooooooooo |                   
-#  |              ooooooooooooooooooooooo  |                       
-#  |        oooooooooooooooooooooooooooo   |                            
-#  |      oooooooooooooooooooooooo         |                          
-#  |    ooooooooooooooo                    |               
-#  |  oooooo                               |     
-#  |                                       | 
-#  (lo1,la1)-------------------------------(lo2,la1)
+  (lo1,la2)-------------------------------(lo2,la2)
+  |               ooooooooo               |       
+  |                    oooooooooooo       |            
+  |                       ooooooooooooo   |                 
+  |                         ooooooooooooo |             
+  |                   ooooooooooooooooooo |                   
+  |              ooooooooooooooooooooooo  |                       
+  |        oooooooooooooooooooooooooooo   |                            
+  |      oooooooooooooooooooooooo         |                          
+  |    ooooooooooooooo                    |               
+  |  oooooo                               |     
+  |                                       | 
+  (lo1,la1)-------------------------------(lo2,la1)
 
 
 2.  Stage 1: Identifying WCB Ascent Trajectories
