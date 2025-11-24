@@ -69,3 +69,15 @@ Edit `NAMELIST_X.jl` corresponding to your selected case.
 ### 4️⃣ Run the Selection Script
 Modify paths in `analysis_mogon.slurm` and submit to SLURM
 Alternatively, run the same commands manually in the terminal.
+
+----------
+## How the WCB Selection Algorithm Works
+Warm Conveyor Belt (WCB) trajectories are identified in two stages using the information specified in each `NAMELIST_X.jl` file and the functions in `WCB_selection.jl`.
+The selection is based on physical ascent criteria and cyclone location checks.
+
+1. Reading Trajectory and Configuration Metadata.
+`WCB_selection.jl` reads the NAMELIST via:
+``` include("CASE.jl")
+    include("NAMELIST_$(CASE).jl")
+```
+
