@@ -75,7 +75,7 @@ Alternatively, run the same commands manually in the terminal.
 Warm Conveyor Belt (WCB) trajectories are identified in two stages using the information specified in each `NAMELIST_X.jl` file and the functions in `WCB_selection.jl`.
 The selection is based on physical ascent criteria and cyclone location checks.
 
-1. Reading Trajectory and Configuration Metadata.
+### 1. Reading Trajectory and Configuration Metadata.
 `WCB_selection.jl` reads the NAMELIST via:
 ``` 
     include("CASE.jl")
@@ -94,7 +94,7 @@ These limits are defined by you and indicate where the cyclone is located at two
 Look at `NAMELIST_1.jl` line 133 to see an example of how the lon and lat values create a box around the WCB. 
 You have to create plots of the NWP data (cloud cover) to select these times and lon-lat values.
 
-2.  Stage 1: Identifying WCB Ascent Trajectories
+### 2.  Stage 1: Identifying WCB Ascent Trajectories
 The first filtering uses only trajectory vertical motion.
 A trajectory is marked as a WCB candidate if it **rises at least 600 hPa within ≤ 48 hours**.
 This is implemented in:
@@ -109,7 +109,7 @@ This finds:
     - `a`: when the ascent begins (index in time)
     - `tau600`: how long the 600 hPa rise takes (in time steps)
 
-3. Stage 2: Cyclone Location Check
+### 3. Stage 2: Cyclone Location Check
 Not all ascending air parcels belong to the cyclone of interest.
 To ensure the selected trajectories correspond to the desired WCB, they must be located inside two **longitude/latitude boxes** at two different times during the development of the cyclone.
 
@@ -130,7 +130,7 @@ This filtering happens inside:
 ```
 At the end, only WCB trajectories that both ascend rapidly AND are inside the cyclone at both times are kept.
 
-4. Output of the Selection
+### 4. Output of the Selection
 If a trajectory file contains valid WCBs, a `WCB_tau_*.nc` metadata file is written containing:
 
 | Field      | Meaning                                            |
