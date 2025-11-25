@@ -586,7 +586,7 @@ function find_start_min(k,pk,a_s,n_s,t_s)
 		return 1
 	end
 	for i in 1:a_start
-                p_diff_min = -(TRAJ_TIME_STEP_HOURS * 8) .* (a_start - i)
+                p_diff_min = -(TRAJ_TIME_STEP_HOURS * 8 * 2) .* (a_start - i)
 		if i == a_start
 			return a_start
 		elseif pk[a_start] .- pk[i] .< p_diff_min
